@@ -1,61 +1,59 @@
 # Patricio Espinosa Quijano
 
-> Cybersecurity Analyst & Detection Engineer
+**SOC Analyst Intern · Detection Engineering · Cybersecurity Engineering student (expected 2028)**
 
-Welcome to my profile. I am a Cybersecurity Analyst and Cybersecurity Engineering student (Class of 2028), with a strategic focus on Security Operations and Threat Intelligence. My work centers on normalizing security telemetry, developing robust detection engineering, and automating incident response to mature enterprise security operations.
+Mérida, Yucatán, México · [LinkedIn](https://www.linkedin.com/in/patricio-espinosa-quijano) · [patricio.espinosaquijano@gmail.com](mailto:patricio.espinosaquijano@gmail.com)
 
-## Areas of Expertise
+I work in security operations: onboarding security telemetry into Google SecOps, writing and tuning YARA-L 2.0 detection rules, and documenting SOAR response playbooks. Outside work, I build open, reproducible labs that show how attacks and defenses actually behave, and I share them with the security and CSIRT community.
 
-* **Security Operations (SIEM/SOAR):** Normalizing telemetry from multiple sources (e.g., Bindplane to Google SecOps) and documenting automated playbooks to standardize incident response procedures.
+**Currently looking for:** roles in SOC operations or detection engineering.
 
-* **Detection Engineering:** Developing, tuning, and maintaining advanced detection rules using languages such as YARA-L 2.0 to identify malicious activity across environments.
+## What I work on
 
-* **Threat Intelligence:** Analyzing adversary behaviors and accurately mapping Tactics, Techniques, and Procedures (TTPs) to the MITRE ATT&CK framework to improve detection coverage.
+- **Security telemetry:** onboarding and normalizing logs from multiple sources into Google SecOps with Bindplane.
+- **Detection engineering:** writing and tuning YARA-L 2.0 rules to catch suspicious and malicious activity.
+- **Threat intelligence:** mapping adversary TTPs to MITRE ATT&CK to find gaps in detection coverage.
+- **Response automation:** designing and documenting SOAR playbooks that standardize incident handling.
+- **Awareness and community:** phishing and social-engineering sessions for local businesses and students, and participation in the LACNIC CSIRTs community.
 
-* **Security Awareness & Community:** Mitigating social engineering risks and actively collaborating in regional incident response coordination with the LACNIC CSIRT community.
+## Featured projects
 
-## Featured Projects
+### [Email Authentication Lab (SPF, DKIM, DMARC)](https://github.com/PatoEQ/email-auth-lab)
 
-### HoneyNet: Cloud Vulnerability & Threat Analysis
+`Docker` `Postfix` `OpenDKIM` `Rspamd` `CoreDNS` `Python` `pytest` `GitHub Actions`
 
-Deployed a deliberately vulnerable cloud environment in Azure (consisting of Windows, Linux, and SQL Server VMs) exposed to the public internet to attract and analyze real-world attack traffic. Log collection was centralized using a Log Analytics Workspace, forwarding events to Microsoft Sentinel. This enabled security incident correlation and the creation of alerts through KQL-based detection rules.
+A reproducible, network-isolated lab that replays a CEO-fraud (BEC) spoofing attack against a fictional bank, adding one defense per scenario until DMARC `p=reject` stops it.
 
-### Active Directory Adversary Simulation
+- 6 spoofing techniques (envelope forgery, in-transit tampering, attacker-signed DKIM, lookalike domains) that show what each protocol blocks and where it fails.
+- A Python CLI that switches scenarios with one command and explains every authentication result in plain language.
+- The full attack-by-scenario matrix is checked by pytest against the running lab in GitHub Actions CI.
+- Presented live to security professionals and CSIRT teams.
 
-Validated detection coverage for critical MITRE ATT&CK techniques by executing adversary simulations using Atomic Red Team within a custom Active Directory lab environment. The project focused on optimizing SIEM alerting rules and conducting in-depth telemetry analysis through Splunk Universal Forwarders.
+<!--
+### [SOC Sentinel Crew](https://github.com/PatoEQ/soc-sentinel-crew)
 
-## Tech Stack
+Uncomment this block when the repository is public.
+-->
 
-**Languages & Scripting**
+## Tech stack
 
-* Python | Bash | PowerShell | SQL
-
-**Detection & SIEM/SOAR**
-
-* Google SecOps (YARA-L 2.0) | Microsoft Sentinel (KQL) | Splunk (SPL) | Elastic SIEM | Sigma Rules
-
-**Cloud & Infrastructure**
-
-* Google Cloud Platform (GCP) | Microsoft Azure | AWS | Active Directory | Microsoft Entra ID
-
-**Forensics & Threat Intelligence**
-
-* MITRE ATT&CK | Threat Modeling | Memory Analysis | PCAP/NetFlow Analysis | Windows Event Logs | Sysmon
+| Area | Tools |
+|---|---|
+| Detection & SIEM/SOAR | Google SecOps (YARA-L 2.0), Microsoft Sentinel (KQL), Splunk (SPL), SOAR playbooks, MITRE ATT&CK |
+| Log analysis & DFIR | Windows Event Logs, Sysmon, PCAP analysis, memory analysis, incident response lifecycle |
+| Email & network security | SPF, DKIM, DMARC, Postfix, Rspamd, DNS |
+| Cloud & identity | Google Cloud Platform, Microsoft Azure, Active Directory, Microsoft Entra ID |
+| Languages & tooling | Python, Bash, PowerShell, SQL, Docker, Git, GitHub Actions |
 
 ## Certifications
 
-* Microsoft Certified: Azure Fundamentals (AZ-900)
+| Certification | Issuer | Date |
+|---|---|---|
+| Certified Defensive Security Analyst (CDSA) | Hack The Box | Jul 2026 |
+| Certified CyberDefender Level 1 (CCDL1) | CyberDefenders | Mar 2026 |
+| Microsoft Certified: Azure Fundamentals (AZ-900) | Microsoft | Nov 2025 |
+| Google Cybersecurity Professional Certificate | Google | Oct 2024 |
 
-* Certified CyberDefender Level 1 (CCDLI)
+## Languages
 
-* Certified Defensive Security Analyst (CDSA)
-
-* Google Cybersecurity Certificate
-
-## Contact
-
-If you are interested in discussing detection engineering, security operations, or exploring potential professional collaborations, feel free to reach out.
-
-* **Email:** [patricio.espinosaquijano@gmail.com](mailto:patricio.espinosaquijano@gmail.com)
-
-* **LinkedIn:** [Find me on LinkedIn](https://www.linkedin.com/in/patricio-espinosa-quijano)
+Spanish (native) · English (C1, iTEP)
